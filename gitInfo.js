@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+let gitDefinition = 'Git is a version control system that developers use all over the world. It helps you track different versions of your code and collaborate with other developers.'
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +18,7 @@
 */
 
 //CODE HERE
+let gitHubDefinition = "GitHub is a product that allows you to host your Git projects on a remote server somewhere (or in other words, in the cloud). "
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,6 +27,7 @@
 */
 
 //CODE HERE
+ let gitInitDefinition = "The git init command creates a new empty Git repository"
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -34,7 +36,7 @@
 */
 
 //CODE HERE
-
+let gitCloneDefinition = "git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location"
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +44,8 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition = "The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git"
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -53,6 +57,9 @@
 */
 
 //CODE HERE
+const gitAddDefinition = "The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit."
+
+const gitAddCode = "git add ."
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -65,6 +72,9 @@
 
 //CODE HERE
 
+const gitCommitDefinition = "The git commit command captures a snapshot of the project's currently staged changes"
+
+const gitCommitCode = `git commit -m "initial commit"`
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +83,5 @@
 */
 
 //CODE HERE
+
+let gitPushDefinition = "The git push command is used to upload local repository content to a remote repository."
