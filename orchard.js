@@ -151,9 +151,17 @@ console.log(days)
 
 // CODE HERE
 
-// let fujiTons = 
-// let galaTons =
-// let pinkTons =
+let fujiTons = [];
+let galaTons = [];
+let pinkTons = [];
+for (let i = 0; i < fujiAcres.length; i++) {
+  fujiTons.push(fujiAcres[i] * 6.5);
+  galaTons.push(galaAcres[i] * 6.5);
+  pinkTons.push(pinkAcres[i] * 6.5);
+}
+console.log(fujiTons);
+console.log(galaTons);
+console.log(pinkTons);
 
 // PROBLEM 5
 
