@@ -2,7 +2,7 @@
 // Apple Orchard //
 ///////////////////
 
-const { pink } = require("@material-ui/core/colors");
+
 
 /*
     The data below has been collected over the 
@@ -181,10 +181,13 @@ console.log(pinkTons);
 
 // CODE HERE
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = fujiTons.reduce((a, currVal) => a + currVal) * 2000;
+let galaPounds = galaTons.reduce((a, currVal) => a + currVal) * 2000;
+let pinkPounds = pinkTons.reduce((a, currVal) => a + currVal) * 2000;
 
+console.log(fujiPounds);
+console.log(galaPounds);
+console.log(pinkPounds);
 // PROBLEM 6
 
 /*
