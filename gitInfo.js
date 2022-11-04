@@ -84,4 +84,4 @@ const gitCommitCode = `git commit -m "initial commit"`
 
 //CODE HERE
 
-let gitPushDefinition = "The git push command is used to upload local repository content to a remote repository."
+let gitPushDefinition = "The git push command is used to upload local repository content to a remote repository. Allows you to send (or push) the commits from your local branch in your local Git repository to the remote repository."
