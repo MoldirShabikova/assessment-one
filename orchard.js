@@ -2,6 +2,8 @@
 // Apple Orchard //
 ///////////////////
 
+const { pink } = require("@material-ui/core/colors");
+
 /*
     The data below has been collected over the 
     last week at an apple orchard. You will be 
@@ -27,15 +29,13 @@
     in cents. 
 */
 
-const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
-const galaAcres = [5, 2, 4, 3, 6, 2, 4]
-const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
+const fujiAcres = [2, 3, 3, 2, 2, 2, 1];
+const galaAcres = [5, 2, 4, 3, 6, 2, 4];
+const pinkAcres = [1, 5, 4, 2, 1, 5, 4];
 
-const fujiPrice = .89 
-const galaPrice = .64
-const pinkPrice = .55
-
-
+const fujiPrice = 0.89;
+const galaPrice = 0.64;
+const pinkPrice = 0.55;
 
 // PROBLEM 1
 
@@ -51,9 +51,24 @@ const pinkPrice = .55
 
 // CODE HERE
 
+let totalAcres = 0;
+let fujiAcresTotal = 0;
+for (let i = 0; i < fujiAcres.length; i++) {
+  fujiAcresTotal += fujiAcres[i];
+}
 
+let galaAcresTotal = 0;
+for (let i = 0; i < galaAcres.length; i++) {
+  galaAcresTotal += galaAcres[i];
+}
 
+let pinkAcresTotal = 0;
+for (let i = 0; i < pinkAcres.length; i++) {
+  pinkAcresTotal += pinkAcres[i];
+}
+totalAcres = fujiAcresTotal + galaAcresTotal + pinkAcresTotal;
 
+console.log(totalAcres);
 
 // PROBLEM 2
 
@@ -68,10 +83,9 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-
-
-
-
+let allAcres = [fujiAcres, galaAcres, pinkAcres]
+let averageDailyAcres = totalAcres / allAcres.length
+console.log(averageDailyAcres)
 
 // PROBLEM 3
 
@@ -102,13 +116,15 @@ const pinkPrice = .55
 
 */
 
-let acresLeft = 174 
-let days = 0
+let acresLeft = 174;
+let days = 0;
 
 // CODE HERE
-
-
-
+while(acresLeft > 0){
+    acresLeft =acresLeft - averageDailyAcres  
+    days++
+}
+console.log(days)
 // PROBLEM 4
 
 /*
@@ -135,14 +151,9 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
+// let fujiTons = 
 // let galaTons =
 // let pinkTons =
-
-
-
-
-
 
 // PROBLEM 5
 
@@ -160,16 +171,11 @@ let days = 0
     Hint: there are 2000 pounds in a ton.
 */
 
-// CODE HERE 
+// CODE HERE
 
 // let fujiPounds =
 // let galaPounds =
 // let pinkPounds =
-
-
-
-
-
 
 // PROBLEM 6
 
@@ -192,11 +198,6 @@ let days = 0
 // let fujiProfit =
 // let galaProfit =
 // let pinkProfit =
-
-
-
-
-
 
 // PROBLEM 7
 
