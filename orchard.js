@@ -206,9 +206,13 @@ console.log(pinkPounds);
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice
+console.log('fujiProfit', fujiProfit)
+let galaProfit = galaPounds * galaPrice
+console.log('galaProfit', galaProfit)
+
+let pinkProfit =  pinkPounds * pinkPrice
+console.log('pinkProfit', pinkProfit)
 
 // PROBLEM 7
 
@@ -221,3 +225,6 @@ console.log(pinkPounds);
 */
 
 // CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit;
+
+console.log(`The total profit is ${totalProfit}`);
